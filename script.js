@@ -19,6 +19,8 @@ $(document).ready(function(){
 
   }
       vintagemotorcycles();
+      //function here? separate file? inside above function?
+      //call it with? 
   //     $( function() {
   //   $( "#sortable" ).sortable();
   //   $( "#sortable" ).disableSelection();
