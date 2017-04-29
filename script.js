@@ -19,5 +19,9 @@ $(document).ready(function(){
 
   }
       vintagemotorcycles();
+  //     $( function() {
+  //   $( "#sortable" ).sortable();
+  //   $( "#sortable" ).disableSelection();
+  // } );
 //end of doc ready function
 });

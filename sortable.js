@@ -1,8 +1,9 @@
 //sortable function
-
-$( function Moto() {
+//no clue how to make operational
+var function= Moto;
+$( function () {
 $( "div" ).sortable();
 $( "div" ).disableSelection();
 } );
 
-  Moto();
+  Moto("div");
