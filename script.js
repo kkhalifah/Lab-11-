@@ -14,6 +14,7 @@ $(document).ready(function(){
             $('body').append('<div class=container><p id= myAuthor>' + author + '</p><p id=myTitle>' + title + '</p><img src=' + thumbnail + '></div>');
             //console.log(i);
       }
+
     });
 
   }
