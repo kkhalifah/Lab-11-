@@ -12,7 +12,12 @@ $(document).ready(function(){
           var thumbnail = response.data.children[i].data.thumbnail;
 
             $('body').append('<div class=container><p id= myAuthor>' + author + '</p><p id=myTitle>' + title + '</p><img src=' + thumbnail + '></div>');
-            //console.log(i);
+            $("div").append("<p id=myMain>") + title + ("</p>");
+            //so I think the only issue is that you were appending your divs for each motorcycle to the body
+            //if you make a div in your html page and give it an ID, something like (id="main"),
+            //then use those sortable function calls like Adam had in his example on the "#main" div,
+            //and then append your motorcycle divs to the "#main" div
+
       }
 
     });
@@ -20,7 +25,7 @@ $(document).ready(function(){
   }
       vintagemotorcycles();
       //function here? separate file? inside above function?
-      //call it with? 
+      //call it with?
   //     $( function() {
   //   $( "#sortable" ).sortable();
   //   $( "#sortable" ).disableSelection();
