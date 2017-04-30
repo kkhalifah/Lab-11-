@@ -2,14 +2,19 @@ body {
   background-color: rgba(0,0,255,0.5);
   /*background-image: url("skid-mark.jpg");*/
 }
-
- .conatiner {
+/* this is not working, the default for sortable is block*/
+ div.conatiner {
   display: inline-block;
-  /*float: left ;*/
-  /*margin-top: auto;*/
+  float: left ;
+  margin-top: auto;
   margin: 0 auto;
   width: 100px;
   height: 100px;
+}
+
+h1, h2 {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
 }
 
 img   {
@@ -21,10 +26,15 @@ img   {
 #myAuthor {
   color: white;
   font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
 }
 
 #myTitle  {
   overflow: hidden;
-  max-width: 100px;
-  max-height: 50px;
+  max-width: 200px;
+  max-height: 100px;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 300;
+
 }
