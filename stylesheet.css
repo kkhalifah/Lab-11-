@@ -3,21 +3,18 @@ body {
   /*background-image: url("skid-mark.jpg");*/
 }
 
-.container {
+ .conatiner {
   display: inline-block;
-  float: left ;
+  /*float: left ;*/
   /*margin-top: auto;*/
   margin: 0 auto;
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
 }
 
 img   {
   height: auto;
   border-style: outset;
-
-}
-p    {
 
 }
 

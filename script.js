@@ -6,13 +6,16 @@ $(document).ready(function(){
 
       console.log(response.data.children[0].data);
 
-      for (var i = 0; i < response.data.children.length; i++) {
+      for (var i = 0; i < 25; i++) {
+          // var div = $("<div>").sortable();
           var title = response.data.children[i].data.title;
           var author = response.data.children[i].data.author;
           var thumbnail = response.data.children[i].data.thumbnail;
 
-            $('body').append('<div class=container><p id= myAuthor>' + author + '</p><p id=myTitle>' + title + '</p><img src=' + thumbnail + '></div>');
-            $("div").append("<p id=myMain>") + title + ("</p>");
+          $('#main').append('<div class="container"><p id= "myAuthor">' + author + '</p><p id=myTitle>' + title + '</p><img src=' + thumbnail + '></div>');
+            // $("#main").append("<p>" + title + "</p>");
+            // $("#main").append("<img src=" + thumbnail + ">");
+            // $("#main").append("<p>" + author + "</p>");
             //so I think the only issue is that you were appending your divs for each motorcycle to the body
             //if you make a div in your html page and give it an ID, something like (id="main"),
             //then use those sortable function calls like Adam had in his example on the "#main" div,
