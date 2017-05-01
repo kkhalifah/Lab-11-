@@ -1,6 +1,6 @@
 body {
   background-color: rgba(0,0,255,0.5);
-  /*background-image: url("skid-mark.jpg");*/
+  background-image: url("skid-mark.jpg");
 }
 /* this is not working, the default for sortable is block*/
  div.conatiner {
