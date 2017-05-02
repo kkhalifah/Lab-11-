@@ -3,13 +3,13 @@ body {
   background-image: url("skid-mark.jpg");
 }
 /* this is not working, the default for sortable is block*/
- div.conatiner {
+ div.container {
   display: inline-block;
   float: left ;
   margin-top: auto;
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 250px;
 }
 
 h1, h2 {
