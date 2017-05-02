@@ -7,18 +7,11 @@ $(document).ready(function(){
       console.log(response.data.children[0].data);
 
       for (var i = 0; i < 25; i++) {
-          // var grid = $("<div>").sortable();
-          //Initialize the sortable with the grid option specified:
-          $( "#main" ).sortable({  grid: [ 2, 2 ]});
-          //Get or set the grid option, after initialization:
-          // Getter
-          var grid = $( "#main" ).sortable( "option", "grid" );
+          
+          var grid = $( "#main" ).sortable( );
           var title = response.data.children[i].data.title;
           var author = response.data.children[i].data.author;
           var thumbnail = response.data.children[i].data.thumbnail;
-
-          // Setter
-          $( "#main" ).sortable( "option", "grid", [ 2, 2 ] );
 
           $('#main').append('<div class="container"><p id= "myAuthor">' + author + '</p><p id=myTitle>' + title + '</p><img src=' + thumbnail + '></div>');
 
